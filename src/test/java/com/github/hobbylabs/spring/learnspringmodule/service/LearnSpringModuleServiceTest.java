@@ -5,8 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
+@SpringBootTest(classes = LearnSpringModuleService.class)
 public class LearnSpringModuleServiceTest {
 
     @Autowired
@@ -14,6 +15,7 @@ public class LearnSpringModuleServiceTest {
 
     @Test
     public void contextLoads() {
-        assertThat(learnSpringModuleService.message()).isNotNull();
+        assertThat(learnSpringModuleService).isNotNull();
+        assertEquals("Hello World.", learnSpringModuleService.getHelloWorld());
     }
 }
