@@ -16,6 +16,6 @@ public class LearnSpringModuleService {
         return this.learnSpringModuleServiceProperties.getMessage();
     }
     public String getHelloWorld() {
-        return "Hello World.";
+        return "Hello World2.";
     }
 }
