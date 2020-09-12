@@ -2,7 +2,7 @@ package com.github.hobbylabs.spring.learnspringmodule.service;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("service2")
+@ConfigurationProperties("com.github.hobbylabs.spring.learnspringmodule")
 public class LearnSpringModuleServiceProperties {
     private String message;
 
