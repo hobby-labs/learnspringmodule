@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(classes = LearnSpringModuleService.class, properties = {"service.message=Foo Bar"})
+@SpringBootTest(classes = LearnSpringModuleService.class, properties = {"service2.message=Foo Bar"})
 public class LearnSpringModuleServiceTest {
 
     @Autowired
