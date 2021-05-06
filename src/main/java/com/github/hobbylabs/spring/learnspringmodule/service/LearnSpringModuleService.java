@@ -7,15 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 @EnableConfigurationProperties(LearnSpringModuleServiceProperties.class)
 public class LearnSpringModuleService {
-    private final LearnSpringModuleServiceProperties learnSpringModuleServiceProperties;
+    @Autowired
+    private LearnSpringModuleServiceProperties learnSpringModuleServiceProperties;
 
-    public LearnSpringModuleService(LearnSpringModuleServiceProperties learnSpringModuleServiceProperties) {
-        this.learnSpringModuleServiceProperties = learnSpringModuleServiceProperties;
-    }
-    public String message() {
-        return this.learnSpringModuleServiceProperties.getMessage();
-    }
-    public String getHelloWorld() {
-        return "Hello World2.";
+    public String exec() {
+        String result = learnSpringModuleServiceProperties.getMessage();
+        return result;
     }
 }
